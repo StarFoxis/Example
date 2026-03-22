@@ -1,0 +1,664 @@
+/* ==================== Тёмная тема ==================== */
+QMainWindow, QWidget {
+    background-color: #2b2b2b;
+    color: #e0e0e0;
+    font-size: 10pt;
+}
+
+/* ==================== QFrame стили ==================== */
+QFrame {
+    background-color: #3c3c3c;
+    border: 1px solid #4a4a4a;
+    border-radius: 6px;
+}
+
+/* ==================== QLabel стили ==================== */
+QLabel {
+    color: #e0e0e0;
+    padding: 4px;
+}
+
+QLabel[bold="true"] {
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #2b2b2b;
+    border: none;
+    padding: 8px;
+}
+
+/* ==================== QPushButton стили ==================== */
+QPushButton {
+    background-color: #4a4a4a;
+    border: 1px solid #5a5a5a;
+    border-radius: 5px;
+    padding: 4px 9px;
+    color: #e0e0e0;
+    font-weight: bold;
+    min-height: 20px;
+}
+
+QPushButton:hover {
+    background-color: #5a5a5a;
+    border-color: #6a6a6a;
+}
+
+QPushButton:pressed {
+    background-color: #3a3a3a;
+}
+
+QPushButton:checked {
+    background-color: #44ff44;
+    color: #2b2b2b;
+}
+
+QPushButton:checked:hover {
+    background-color: #66ff66;
+}
+
+QPushButton:disabled {
+    background-color: #3a3a3a;
+    color: #6a6a6a;
+}
+
+/* ==================== QLineEdit стили ==================== */
+QLineEdit {
+    background-color: #2b2b2b;
+    border: 1px solid #4a4a4a;
+    border-radius: 5px;
+    padding: 5px;
+    color: #e0e0e0;
+    selection-background-color: #0078d7;
+    selection-color: #ffffff;
+}
+
+QLineEdit:focus {
+    border-color: #0078d7;
+}
+
+QLineEdit:disabled {
+    background-color: #3a3a3a;
+    color: #6a6a6a;
+}
+
+/* ==================== QComboBox стили ==================== */
+QComboBox {
+    background-color: #2b2b2b;
+    border: 1px solid #4a4a4a;
+    border-radius: 5px;
+    padding: 5px;
+    padding-right: 25px;
+    color: #e0e0e0;
+    min-height: 20px;
+}
+
+QComboBox:hover {
+    border-color: #6a6a6a;
+}
+
+QComboBox:focus {
+    border-color: #0078d7;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 25px;
+    border-left: 1px solid #4a4a4a;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+QComboBox::down-arrow {
+    image: url("://images/images/arrowWhite.png");
+    width: 15;
+    height: 15;
+}
+
+QComboBox::down-arrow:on {
+    border-top: none;
+    border-bottom: 5px solid #e0e0e0;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #2b2b2b;
+    border: 1px solid #4a4a4a;
+    border-radius: 5px;
+    color: #e0e0e0;
+    selection-background-color: #0078d7;
+    selection-color: #ffffff;
+}
+
+QComboBox QAbstractItemView::item {
+    padding: 5px;
+}
+
+QComboBox QAbstractItemView::item:hover {
+    background-color: #3c3c3c;
+}
+
+QComboBox:disabled {
+    background-color: #3a3a3a;
+    color: #6a6a6a;
+}
+
+/* ==================== QScrollArea стили ==================== */
+QScrollArea {
+    background-color: #2b2b2b;
+    border: none;
+}
+
+QScrollArea QFrame {
+    border: none;
+}
+
+/* ==================== QScrollBar стили ==================== */
+QScrollBar:vertical {
+    background-color: #2b2b2b;
+    width: 12px;
+    border-radius: 6px;
+    margin: 0px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #5a5a5a;
+    border-radius: 6px;
+    min-height: 20px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #6a6a6a;
+}
+
+QScrollBar::handle:vertical:pressed {
+    background-color: #4a4a4a;
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    border: none;
+    background: none;
+}
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: none;
+}
+
+QScrollBar:horizontal {
+    background-color: #2b2b2b;
+    height: 12px;
+    border-radius: 6px;
+    margin: 0px;
+}
+
+QScrollBar::handle:horizontal {
+    background-color: #5a5a5a;
+    border-radius: 6px;
+    min-width: 20px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background-color: #6a6a6a;
+}
+
+QScrollBar::handle:horizontal:pressed {
+    background-color: #4a4a4a;
+}
+
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
+    border: none;
+    background: none;
+}
+
+/* ==================== QSplitter стили ==================== */
+QSplitter::handle {
+    background-color: #4a4a4a;
+    width: 2px;
+}
+
+QSplitter::handle:hover {
+    background-color: #0078d7;
+}
+
+/* ==================== QTextBrowser (TextBrowser) стили ==================== */
+TextBrowser, QTextBrowser {
+    background-color: #1e1e1e;
+    border: 1px solid #4a4a4a;
+    border-radius: 5px;
+    color: #e0e0e0;
+    font-family: "Courier New", monospace;
+    font-size: 10pt;
+    padding: 5px;
+}
+
+TextBrowser:focus, QTextBrowser:focus {
+    border-color: #0078d7;
+}
+
+/* ==================== QCheckBox стили ==================== */
+QCheckBox {
+    color: #e0e0e0;
+    spacing: 0;
+    padding: 0;
+    margin:  0;
+    margin-left: 4px;
+    font-weight: normal;
+}
+
+QCheckBox::indicator {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+}
+
+/* Неотмеченное состояние */
+QCheckBox::indicator:unchecked {
+    background-color: #2b2b2b;
+    border: 2px solid #5a5a5a;
+    border-radius: 4px;
+}
+
+/* Неотмеченное при наведении */
+QCheckBox::indicator:unchecked:hover {
+    background-color: #3c3c3c;
+    border-color: #6a6a6a;
+}
+
+/* Отмеченное состояние */
+QCheckBox::indicator:checked {
+    background-color: #0078d7;
+    border: 2px solid #0078d7;
+    border-radius: 4px;
+    image: url("://images/images/checkedWhite.png");
+}
+
+/* Отмеченное при наведении */
+QCheckBox::indicator:checked:hover {
+    background-color: #0080e8;
+    border-color: #0080e8;
+}
+
+/* Отключённое состояние */
+QCheckBox:disabled {
+    color: #6a6a6a;
+}
+
+QCheckBox:disabled::indicator:unchecked {
+    background-color: #3a3a3a;
+    border-color: #4a4a4a;
+}
+
+QCheckBox:disabled::indicator:checked {
+    background-color: #5a6a7a;
+    border-color: #6a7a8a;
+}
+
+/* Фокус - только изменение цвета границы */
+QCheckBox:focus::indicator {
+    border-color: #0078d7;
+}
+
+/* ==================== QSpinBox стили для тёмной темы ==================== */
+QSpinBox {
+    background-color: #2b2b2b;
+    border: 1px solid #4a4a4a;
+    border-radius: 5px;
+    padding: 4px;
+    color: #e0e0e0;
+    min-height: 20px;
+    selection-background-color: #0078d7;
+    selection-color: #ffffff;
+}
+
+QSpinBox:hover {
+    border-color: #6a6a6a;
+}
+
+QSpinBox:focus {
+    border-color: #0078d7;
+}
+
+QSpinBox:disabled {
+    background-color: #3a3a3a;
+    color: #6a6a6a;
+}
+
+QSpinBox::up-button {
+    subcontrol-origin: border;
+    subcontrol-position: top right;
+    width: 20px;
+    height: 15px;
+    background-color: #4a4a4a;
+    border: none;
+    border-left: 1px solid #5a5a5a;
+    border-top-right-radius: 4px;
+}
+
+QSpinBox::up-button:hover {
+    background-color: #5a5a5a;
+}
+
+QSpinBox::up-button:pressed {
+    background-color: #3a3a3a;
+}
+
+QSpinBox::up-arrow {
+    width: 10px;
+    height: 10px;
+    image: url(:/images/images/arrowUpWhite.png);
+}
+
+QSpinBox::down-button {
+    subcontrol-origin: border;
+    subcontrol-position: bottom right;
+    width: 20px;
+    height: 15px;
+    background-color: #4a4a4a;
+    border: none;
+    border-left: 1px solid #5a5a5a;
+    border-bottom-right-radius: 4px;
+}
+
+QSpinBox::down-button:hover {
+    background-color: #5a5a5a;
+}
+
+QSpinBox::down-button:pressed {
+    background-color: #3a3a3a;
+}
+
+QSpinBox::down-arrow {
+    width: 10px;
+    height: 10px;
+    image: url(:/images/images/arrowDownWhite.png);
+}
+
+/* ==================== QProgressBar стили ==================== */
+QProgressBar {
+    background-color: #2b2b2b;
+    border: 1px solid #4a4a4a;
+    border-radius: 4px;
+    text-align: center;
+    color: #e0e0e0;
+    font-size: 9pt;
+    font-weight: bold;
+    min-height: 20px;
+    max-height: 20px;
+}
+
+QProgressBar::chunk {
+    background-color: #0078d7;
+    border-radius: 3px;
+    margin: 1px;
+}
+
+QProgressBar:horizontal {
+    height: 20px;
+}
+
+QProgressBar:vertical {
+    width: 20px;
+    min-width: 20px;
+    max-width: 20px;
+}
+
+QProgressBar:vertical::chunk {
+    background-color: #0078d7;
+    border-radius: 3px;
+    margin: 1px;
+}
+
+QProgressBar:disabled {
+    background-color: #3a3a3a;
+    color: #6a6a6a;
+}
+
+QProgressBar:disabled::chunk {
+    background-color: #4a4a4a;
+}
+
+/* ==================== QTabWidget стили ==================== */
+QTabWidget {
+    background-color: #2b2b2b;
+    border: none;
+}
+
+QTabWidget::pane {
+    background-color: #2b2b2b;
+    border: 1px solid #4a4a4a;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+QTabWidget::tab-bar {
+    alignment: left;
+}
+
+QTabBar::tab {
+    background-color: #3a3a3a;
+    border: 1px solid #4a4a4a;
+    border-bottom: none;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 6px 12px;
+    margin-right: 2px;
+    color: #e0e0e0;
+    font-weight: normal;
+}
+
+QTabBar::tab:first {
+    margin-left: 4px;
+}
+
+QTabBar::tab:selected {
+    background-color: #2b2b2b;
+    border-bottom: 1px solid #2b2b2b;
+    color: #0078d7;
+    font-weight: bold;
+}
+
+QTabBar::tab:!selected:hover {
+    background-color: #4a4a4a;
+    border-color: #5a5a5a;
+}
+
+QTabBar::tab:disabled {
+    color: #6a6a6a;
+    background-color: #2a2a2a;
+}
+
+/* ==================== Кастомные стили для конкретных виджетов ==================== */
+/* Frame Command Writer */
+#frameWritterCommand {
+    background-color: #3c3c3c;
+}
+
+/* Frame Message Terminal */
+#frameMessageTerminal {
+    background-color: #3c3c3c;
+}
+
+/* Frame Settings UART */
+#frameSettingsUART {
+    background-color: #3c3c3c;
+}
+
+/* Frame Control UART */
+#frameControlUART {
+    background-color: #3c3c3c;
+}
+
+/* Frame Push Command */
+#framePushCommand {
+    background-color: #3c3c3c;
+}
+
+/* Кнопка Отправить */
+#pushButtonPushCommandUART {
+    background-color: #0e639c;
+    border-color: #1177bb;
+    color: #ffffff;
+}
+
+#pushButtonPushCommandUART:hover {
+    background-color: #1177bb;
+}
+
+#pushButtonPushCommandUART:pressed {
+    background-color: #0a4a7a;
+}
+
+/* Кнопка Тесты */
+#pushButtonOpenTests {
+    background-color: #0e639c;
+    border-color: #1177bb;
+    color: #ffffff;
+}
+
+#pushButtonOpenTests:hover {
+    background-color: #1177bb;
+}
+
+#pushButtonOpenTests:pressed {
+    background-color: #0a4a7a;
+}
+
+#pushButtonOpenTests:disabled {
+    background-color: #4a5a6a;
+    border-color: #5a6a7a;
+    color: #8a9aac;
+}
+
+/* Кнопка Макросы */
+#pushButtonOpenMacros {
+    background-color: #ff8c42;
+    border-color: #e07c32;
+    color: #ffffff;
+}
+
+#pushButtonOpenMacros:hover {
+    background-color: #ff9c5a;
+}
+
+#pushButtonOpenMacros:pressed {
+    background-color: #e07c32;
+}
+
+#pushButtonOpenMacros:disabled {
+    background-color: #8a6a4a;
+    border-color: #9a7a5a;
+    color: #c0a880;
+}
+
+/* Кнопка Добавить */
+#pushButtonPushCommandList {
+    background-color: #3e6a3e;
+    border-color: #4e7a4e;
+    color: #ffffff;
+}
+
+#pushButtonPushCommandList:hover {
+    background-color: #4e7a4e;
+}
+
+#pushButtonPushCommandList:pressed {
+    background-color: #2e5a2e;
+}
+
+/* Кнопка Подключить - яркая зелёная */
+#pushButtonControlUART {
+    background-color: #32cd32;      /* Лаймово-зелёный */
+    border-color: #42dd42;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#pushButtonControlUART:hover {
+    background-color: #42dd42;
+}
+
+#pushButtonControlUART:pressed {
+    background-color: #22bd22;
+}
+
+/* Кнопка Обновить список портов - яркая оранжево-красная */
+#pushButtonUpdatePortNames {
+    background-color: #ff6347;      /* Томатный */
+    border-color: #ff7357;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#pushButtonUpdatePortNames:hover {
+    background-color: #ff7357;
+}
+
+#pushButtonUpdatePortNames:pressed {
+    background-color: #e55337;
+}
+
+/* Кнопка переключения темы - тёмная тема */
+#toolButtonStyle {
+    background-color: #4a4a4a;
+    border: 1px solid #5a5a5a;
+    border-radius: 5px;
+    padding: 6px 12px;
+    color: #e0e0e0;
+    font-weight: bold;
+    min-width: 80px;
+}
+
+#toolButtonStyle:hover {
+    background-color: #5a5a5a;
+    border-color: #6a6a6a;
+}
+
+#toolButtonStyle:pressed {
+    background-color: #3a3a3a;
+}
+
+#toolButtonStyle:checked {
+    background-color: #0e639c;
+    color: #ffffff;
+    border-color: #1177bb;
+}
+
+#toolButtonStyle:checked:hover {
+    background-color: #1177bb;
+}
+
+/* Комбобоксы */
+#comboBoxPortName, #comboBoxBaudRate, #comboBoxDataBits,
+#comboBoxStopBits, #comboBoxFlowControl, #comboBoxParity {
+    background-color: #2b2b2b;
+}
+
+/* LineEdit для команд */
+#lineEditCommandPacket, #lineEditCommandName {
+    font-family: "Courier New", monospace;
+    font-size: 10pt;
+}
+
+/* ==================== Стили для TextBrowser кнопки очистки ==================== */
+TextBrowser QPushButton#clearButton {
+    background-color: #4a4a4a;
+    border: 1px solid #5a5a5a;
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: 11px;
+    font-weight: bold;
+    color: #e0e0e0;
+}
+
+TextBrowser QPushButton#clearButton:hover {
+    background-color: #5a5a5a;
+    border-color: #0078d7;
+    color: #0078d7;
+}
+
+TextBrowser QPushButton#clearButton:pressed {
+    background-color: #3a3a3a;
+}
+
+/* ==================== QSpacerItem стили ==================== */
+QSpacerItem {
+    background-color: transparent;
+}
