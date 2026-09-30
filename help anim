@@ -1,0 +1,23 @@
+    // Линейная интерполяция значения в заданное время
+    int getValueAt(double currentTime) const {
+        if (keyframes.isEmpty()) return 0;
+        
+        Возвращаем 0, если текущее время меньше времени первой точки
+        if (currentTime < keyframes.first().time) return 0;
+        
+        // После последней точки оставляем её значение (стандартное поведение анимации).
+        // Если вы хотите, чтобы и в конце значение сбрасывалось в 0, замените эту строку на:
+        // if (currentTime >= keyframes.last().time) return 0;
+        if (currentTime >= keyframes.last().time) return keyframes.last().value;
+
+        for (int i = 0; i < keyframes.size() - 1; ++i) {
+            const Keyframe& k1 = keyframes[i];
+            const Keyframe& k2 = keyframes[i+1];
+
+            if (currentTime >= k1.time && currentTime <= k2.time) {
+                double ratio = (currentTime - k1.time) / (k2.time - k1.time);
+                return qRound(k1.value + ratio * (k2.value - k1.value));
+            }
+        }
+        return keyframes.last().value;
+    }
